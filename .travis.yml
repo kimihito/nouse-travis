@@ -4,3 +4,10 @@ rvm:
 - 1.9.3
 - jruby-19mode
 - rbx-19mode
+deploy:
+  provider: heroku
+  api_key:
+    secure: DQgnYReNcs5ApXfL8QS4ipHqoHN8Q8teLOKFd+7MWYDPxZh1mH19w2hxweb5KXxJAh4k1oKm8pufT46ydvlL4uwD4Y1ECqVSq7zcL3qKrjOFxNeSDIrsgVQFPdAEze8ykMWLQap9kdmTOj+Dy/Qb+mQ87dArtOjm+zoERXiZ9FE=
+  app: nouse-travis
+  on:
+    repo: kimihito/nouse-travis
