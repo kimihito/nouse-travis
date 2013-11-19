@@ -10,4 +10,4 @@
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
 
-NouseTravis::Application.config.secret_key_base = '5ef8d28208ff1d65fe6d3afba41bd67eecc0d05243a4aa60c133c14d05e733a071e03c70dbb1014ca949974ed415db0fd84d2070a68d17b14f8ab4ccf15cdf78'
+NouseTravis::Application.config.secret_key_base = ENV["SECRET_TOKEN"]
