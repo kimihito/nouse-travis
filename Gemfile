@@ -10,6 +10,13 @@ group :development do
   gem 'sqlite3'
 end
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'factory_girl_rails'
+  gem 'spring' # これを新しく追加
+end
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
