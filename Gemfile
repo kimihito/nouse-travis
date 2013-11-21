@@ -10,7 +10,7 @@ group :development do
   gem 'sqlite3'
 end
 
-group  :test do
+group :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'guard-pow', require: false
@@ -18,6 +18,7 @@ group  :test do
   gem 'spring'
   gem "spring-commands-rspec"
 end
+
 
 group :production do
   gem 'pg'
