@@ -1,15 +1,15 @@
 def set_secret_token
-  if FileTest.exist?(".powenv")
-    powenv = File.open(".powenv","rb").read
-    secret_token = powenv.gsub("export SECRET_TOKEN=\"", "").gsub(/\"\n$/,"")
-  end
+  powenv = File.open(".powenv","rb").read
+  secret_token = powenv.gsub("export SECRET_TOKEN=\"", "").gsub(/\"\n$/,"")
   secret_token
 end
 
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"] ||= 'test'
-NouseTravis::Application.config.secret_key_base = set_secret_token
+if ENV["RAILS_ENV"] == 'test' && FileTest.exist?(".powenv")
+  NouseTravis::Application.config.secret_key_base = set_secret_token
+end
 
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
