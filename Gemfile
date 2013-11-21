@@ -17,6 +17,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'spring'
   gem "spring-commands-rspec"
+  gem 'dpl'
 end
 
 group :production do
