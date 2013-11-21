@@ -9,8 +9,5 @@ env:
 deploy:
   provider: heroku
   api_key:
-    secure: Tm7HvFfCJOGoxER5GmLCaDNsm/2+oJfB//sf0UUNEEKevghYN6wt/zuIMJOISX1aR2Ekrk/0GiryTCKTnoSOp2IrEXDKcZEOsOcfbxtI+WUy3hGHRgp2XLStRbQVLXfl4MtQZXW8hN4eeKjSCB5/ietMYyRvoY4avjlYITDaDtY=
-  app: nouse-travis
-  on:
-    repo: kimihito/nouse-travis
-    rvm: 2.0.0
+    secure: eDZ9p6++U3XrksLvn8ESNp5SzHEaSU55Aa9JpKUnJikmJtCvO5PH354KUaDJlUHcDpzHt70/eaZwz6HtYCyVxxiP3PZCBXxLVFDEa5+Y2tpEFG21YYzyeKZUK7YuOX3iO+zrSD5S79oYlxfBECbV4ruACMUZ+IvCnydqvbVYxNg=
+  strategy: anvil
