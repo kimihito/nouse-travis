@@ -10,14 +10,13 @@ group :development do
   gem 'sqlite3'
 end
 
-group :development, :test do
+group  :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'guard-pow', require: false
   gem 'factory_girl_rails'
   gem 'spring'
   gem "spring-commands-rspec"
-  gem 'dpl'
 end
 
 group :production do
