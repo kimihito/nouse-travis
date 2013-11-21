@@ -4,7 +4,6 @@ def set_secret_token
   secret_token
 end
 
-
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"] ||= 'test'
 if ENV["RAILS_ENV"] == 'test' && FileTest.exist?(".powenv")
