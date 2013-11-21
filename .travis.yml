@@ -2,7 +2,11 @@ language: ruby
 rvm:
 - 1.9.3
 - 2.0.0
-env: SECRET_TOKEN=test
+env:
+  matrix:
+  - SECRET_TOKEN=test
+  global:
+    secure: DViUO4DFfOkUEyjHZ74N9USnhT7yojbGM3Dcv1FNhXllhY40JWT64z6KQJKcxnTttRxdVMac8l8gPU0uqjvRfGTWTcHwqTpIVWxpzgwJvz9sBidqglQIeY6wadp9H8P9yiiiTsC+/X4ME2hAec5dL5tQlLVOIOF8XT4HFpYcN5c=
 deploy:
   provider: heroku
   api_key:
