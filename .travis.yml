@@ -7,10 +7,10 @@ env:
   global:
     secure: DViUO4DFfOkUEyjHZ74N9USnhT7yojbGM3Dcv1FNhXllhY40JWT64z6KQJKcxnTttRxdVMac8l8gPU0uqjvRfGTWTcHwqTpIVWxpzgwJvz9sBidqglQIeY6wadp9H8P9yiiiTsC+/X4ME2hAec5dL5tQlLVOIOF8XT4HFpYcN5c=
 deploy:
-  rvm: 2.0.0
   provider: heroku
   api_key:
-    secure: WnAtVfTGMSA3lLtG6Dgds65bzQTcyhCXmWVi6DYa30bMKzM4IHwio5OW5LSuqkADEke8XSeudRagtwduv55AJ4dutk974lxg28NAbU5tVYvjo/w6nIXZXG6lbtHAl0VIy8mXUAtkEG7aeGqcZPShjcK9eM3lMLJ+4pGJ3XNj/7g=
+    secure: Tm7HvFfCJOGoxER5GmLCaDNsm/2+oJfB//sf0UUNEEKevghYN6wt/zuIMJOISX1aR2Ekrk/0GiryTCKTnoSOp2IrEXDKcZEOsOcfbxtI+WUy3hGHRgp2XLStRbQVLXfl4MtQZXW8hN4eeKjSCB5/ietMYyRvoY4avjlYITDaDtY=
   app: nouse-travis
   on:
     repo: kimihito/nouse-travis
+    rvm: 2.0.0
