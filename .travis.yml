@@ -2,12 +2,10 @@ language: ruby
 rvm:
 - 2.0.0
 env:
-  matrix:
-  - SECRET_TOKEN=test
-  global:
-    secure: DViUO4DFfOkUEyjHZ74N9USnhT7yojbGM3Dcv1FNhXllhY40JWT64z6KQJKcxnTttRxdVMac8l8gPU0uqjvRfGTWTcHwqTpIVWxpzgwJvz9sBidqglQIeY6wadp9H8P9yiiiTsC+/X4ME2hAec5dL5tQlLVOIOF8XT4HFpYcN5c=
+  SECRET_TOKEN=test
 deploy:
   provider: heroku
   api_key:
     secure: eDZ9p6++U3XrksLvn8ESNp5SzHEaSU55Aa9JpKUnJikmJtCvO5PH354KUaDJlUHcDpzHt70/eaZwz6HtYCyVxxiP3PZCBXxLVFDEa5+Y2tpEFG21YYzyeKZUK7YuOX3iO+zrSD5S79oYlxfBECbV4ruACMUZ+IvCnydqvbVYxNg=
-  strategy: anvil
+  on:
+    rvm: 2.0.0
