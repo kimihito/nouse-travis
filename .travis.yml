@@ -9,4 +9,5 @@ deploy:
     secure: UE0VfkznuTb74QYFDZ/yh/x8JAlmx1EZ/qtNGSHZ4yBxilct+/+UbXzZYdzJhsugaaVgNpgJ334tM79JIJpcVCT8qW8AjqrZ/GG1ZIUWuDTODCmlyuxTkDbHMh31s7I4urFA4/9vN44SPHqFYXN9lMK3+neohG0TLLUyz18xDfE=
   app: nouse-travis
   on:
+    rvm: 2.0.0
     repo: kimihito/nouse-travis
