@@ -1,10 +1,8 @@
 language: ruby
 rvm:
 - 2.0.0
-- 1.9.3
 env:
   - SECRET_TOKEN=test
-
 deploy:
   provider: heroku
   api_key:
