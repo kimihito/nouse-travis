@@ -2,12 +2,13 @@ language: ruby
 rvm:
 - 2.0.0
 env:
-  - SECRET_TOKEN=test
+- SECRET_TOKEN=test
 deploy:
   provider: heroku
   api_key:
-    secure: DQgnYReNcs5ApXfL8QS4ipHqoHN8Q8teLOKFd+7MWYDPxZh1mH19w2hxweb5KXxJAh4k1oKm8pufT46ydvlL4uwD4Y1ECqVSq7zcL3qKrjOFxNeSDIrsgVQFPdAEze8ykMWLQap9kdmTOj+Dy/Qb+mQ87dArtOjm+zoERXiZ9FE=
-  app: nouse-travis
+    secure: f8sUlv11pACJVsh2/ua+LVlBx4PztpRt+Wsgya1cyoc9Z7H+uH3sppanM18HQoK8J93rrYyCIYKwPGu4fN4VQsJvInwruI/9Y5FKIbQHGCvq+IKtvQQQ7NN1Z82XC1lndwzCIkbeKkB16+m0HR/5Hsh4MGrTUCKTiDwDamTeCIk=
+  app:
+    master: nouse-travis
   on:
     rvm: 2.0.0
     repo: kimihito/nouse-travis
